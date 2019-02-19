@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style2.css">
+    <title>Unit System Converter</title>
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+            <h1 id="header">Unit Number Converter</h1>
+            <form class="user-input">
+                <div class="tableRow">
+                    <p>
+                        <input autofocus type="text" id="input" placeholder="Enter Number to Convert">
+                    </p>
+                </div>
+                <div class="tableRow">
+                    <p>
+                        <select name="from" class="nsystems">
+                            <option value="0">FROM</option>
+                        </select>
+                    </p>
+                    <p>
+                        <select name="to" class="nsystems">
+                            <option value="0">TO</option>
+                        </select>
+                    </p>
+                </div>
+                <div class="tableRow">
+                    <p>
+                        <input type="button" value="CONVERT" id="convert_btn">
+                    </p>
+                </div>
+            </form>
+        </div>
+        <div class="container result">
+            <img src="./loading.gif" alt="Loading" class="loading">
+            <div class="calculation">
+                <!-- <div class="tooltip">
+                    <h1>111<span class="tooltiptext" id="myTooltip">copy</span></h1>
+                </div>  -->
+            </div>
+        </div>
+    </div>
+    <script src="ndata.js" type="module"></script>
+</body>
+</html>
